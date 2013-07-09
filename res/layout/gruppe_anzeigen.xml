@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grey_gradient"
+    android:fillViewport="true"
+    android:isScrollContainer="false" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:text="Gruppenname:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:text="Fahrtziel:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:text="Ankunftszeit:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/gruppe_anzeigen_gruppenname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:paddingBottom="3dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/gruppe_anzeigen_fahrtziel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/gruppe_anzeigen_gruppenname"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_uhrzeit_auswahl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/gruppe_anzeigen_fahrtziel"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="3dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:paddingBottom="3dp"
+        android:paddingLeft="5dp"
+        android:text="Mitglieder:"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lv_kontakte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5" >
+    </ListView>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/tv_uhrzeit_auswahl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/green_selector"
+        android:onClick="fahrtStarten"
+        android:text="Fahrt starten" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView5"
+        android:background="@drawable/green_selector"
+        android:onClick="gruppenMitgliederBearbeiten"
+        android:text="Gruppenmitglieder bearbeiten"
+        android:textSize="14sp" />
+
+</RelativeLayout>

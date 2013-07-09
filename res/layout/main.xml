@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_gradient"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MapOverviewActivity" >
+
+    <Button
+        android:id="@+id/NeueGruppeErstellen"
+        android:layout_width="171dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/green_selector"
+        android:onClick="gruppeErstellen"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/newGroup" />
+
+    <Button
+        android:id="@+id/MeineGruppen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NeueGruppeErstellen"
+        android:layout_alignRight="@+id/NeueGruppeErstellen"
+        android:layout_below="@+id/NeueGruppeErstellen"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/green_selector"
+        android:onClick="meineGruppen"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/myGroups" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+# view AndroidManifest.xml #generated:69
+-keep class com.example.androidsearchcontact.ContactSearchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.example.androidsearchcontact.ContactSearchActivity_2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:87
+-keep class com.example.neuegruppeerstellen.AndroidActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.example.neuegruppeerstellen.AppleActivity { <init>(...); }
+
+# view res/layout/mapoverview.xml #generated:16
+-keep class com.example.neuegruppeerstellen.ButtonFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.example.neuegruppeerstellen.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.example.neuegruppeerstellen.GruppeAnzeigen { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.example.neuegruppeerstellen.MapOverviewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.example.neuegruppeerstellen.MeineGruppen { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.example.neuegruppeerstellen.NeueGruppeErstellen { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.example.neuegruppeerstellen.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:81
+-keep class com.example.neuegruppeerstellen.Tab_List_Map { <init>(...); }
+
+# view AndroidManifest.xml #generated:103
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view res/layout/mapoverview.xml #generated:8
+-keep class com.google.android.gms.maps.MapFragment { <init>(...); }
+
+# view res/layout/mapview.xml #generated:24
+-keep class com.google.android.maps.MapView { <init>(...); }
+
+# onClick res/layout/gruppe_anzeigen.xml #generated:99
+# onClick res/layout/neue_gruppe_erstellen.xml #generated:169
+-keepclassmembers class * { *** fahrtStarten(...); }
+
+# onClick res/layout/meine_gruppen.xml #generated:10
+-keepclassmembers class * { *** gruppeAnzeigen(...); }
+
+# onClick res/layout/meine_gruppen.xml #generated:46
+-keepclassmembers class * { *** gruppeAustreten(...); }
+
+# onClick res/layout/main.xml #generated:12
+-keepclassmembers class * { *** gruppeErstellen(...); }
+
+# onClick res/layout/neue_gruppe_erstellen.xml #generated:179
+-keepclassmembers class * { *** gruppeSpeichern(...); }
+
+# onClick res/layout/gruppe_anzeigen.xml #generated:110
+-keepclassmembers class * { *** gruppenMitgliederBearbeiten(...); }
+
+# onClick res/layout/neue_gruppe_erstellen.xml #generated:145
+-keepclassmembers class * { *** kontakteAuswaehlen(...); }
+
+# onClick res/layout/main.xml #generated:27
+-keepclassmembers class * { *** meineGruppen(...); }
+
+# onClick res/layout/meine_gruppen.xml #generated:60
+-keepclassmembers class * { *** neueGruppeErstellen(...); }
+
+# onClick res/layout/kontakte_hinzufuegen.xml #generated:14
+-keepclassmembers class * { *** saveContacts(...); }
+
+# onClick res/layout/neue_gruppe_erstellen.xml #generated:95
+-keepclassmembers class * { *** uhrzeitEinstellen(...); }
+

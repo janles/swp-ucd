@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Auswahl Menü</string>
+    <string name="action_settings">Settings</string>
+    <string name="newGroup">Neue Gruppe erstellen</string>
+    <string name="myGroups">Meine Gruppen</string>
+    <string name="neue_gruppe_erstellen_name">Gruppenname:</string>
+    <string name="neue_gruppe_erstellen_fahrtziel">Fahrtziel:</string>
+    <string name="neue_gruppe_erstellen_mitglieder">Mitglieder:</string>
+    <string name="neue_gruppe_erstellen_plus">+</string>
+    <string name="neue_gruppe_erstellen_gruppe_speichern">Gruppe speichern</string>
+    <string name="neue_gruppe_erstellen_label">neue Gruppe erstellen</string>
+    <string name="meine_gruppen_austreten">austreten</string>
+    <string name="meine_gruppen_anzeigen">anzeigen</string>
+    <string name="meine_gruppen_keine_gruppen">Keine Gruppen vorhanden!</string>
+    <string name="gruppe_anzeigen_ankunftszeit">Ankunftszeit:</string>
+    <string name="gruppe_anzeigen_fahrt_starten">Fahrt starten</string>
+
+</resources>

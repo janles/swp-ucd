@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_grey_gradient"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/buttonAnzeigen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/green_selector"
+        android:minWidth="90dp"
+        android:onClick="gruppeAnzeigen"
+        android:text="@string/meine_gruppen_anzeigen"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/lv_group"
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_KeineGruppen"
+        android:choiceMode="multipleChoice" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_KeineGruppen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/meine_gruppen_keine_gruppen"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonAustreten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAnzeigen"
+        android:layout_alignBottom="@+id/buttonAnzeigen"
+        android:layout_marginRight="27dp"
+        android:layout_toLeftOf="@+id/buttonAnzeigen"
+        android:background="@drawable/green_selector"
+        android:minWidth="90dp"
+        android:onClick="gruppeAustreten"
+        android:text="@string/meine_gruppen_austreten"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonNeueGruppeErstellen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/buttonAustreten"
+        android:background="@drawable/green_selector"
+        android:onClick="neueGruppeErstellen"
+        android:text="Neue Gruppe erstellen" />
+
+</RelativeLayout>

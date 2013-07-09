@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/lv_group"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_x="-1dp"
+        android:layout_y="4dp" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_KeineGruppen"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_x="96dp"
+        android:layout_y="8dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="164dp"
+        android:layout_height="80dp"
+        android:layout_x="6dp"
+        android:layout_y="384dp"
+        android:text="Neue Gruppe erstellen" />
+
+    <Button
+        android:id="@+id/buttonAnzeigen"
+        android:layout_width="123dp"
+        android:layout_height="40dp"
+        android:layout_x="177dp"
+        android:layout_y="387dp"
+        android:text="anzeigen"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonAustreten"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_x="175dp"
+        android:layout_y="420dp"
+        android:text="austreten"
+        android:visibility="invisible" />
+
+</AbsoluteLayout>

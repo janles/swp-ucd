@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grey_gradient"
+    android:fillViewport="true"
+    android:isScrollContainer="false" >
+
+    <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!-- Gruppenname -->
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp" >
+
+            <EditText
+                android:id="@+id/gruppe_anzeigen_gruppenname"
+                android:layout_width="199dp"
+                android:layout_height="wrap_content"
+                android:layout_x="110dp"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:width="150dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/gruppe_anzeigen_gruppenname_label"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="11dp"
+                android:text="@string/neue_gruppe_erstellen_name"
+                android:textSize="15sp"
+                android:width="100dp" />
+
+        </AbsoluteLayout>
+
+        <!-- Fahrtziel -->
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp" >
+
+            <EditText
+                android:id="@+id/gruppe_anzeigen_fahrtziel"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_x="112dp"
+                android:ems="10"
+                android:inputType="text"
+                android:maxLines="1"
+                android:width="150dp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="1dp"
+                android:layout_y="9dp"
+                android:text="Fahrtziel:"
+                android:textSize="15sp" />
+
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp" >
+
+            <Button
+                android:id="@+id/button_einstellen"
+                android:layout_width="80dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="24dp"
+                android:layout_x="170dp"
+                android:layout_y="0dp"
+                android:background="@drawable/green_selector"
+                android:onClick="uhrzeitEinstellen"
+                android:text="einstellen"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_uhrzeit_auswahl"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_x="106dp"
+                android:layout_y="8dp"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_ankunftszeit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="7dp"
+                android:text="Ankunftszeit:"
+                android:textSize="15sp" />
+
+        </AbsoluteLayout>
+
+        <AbsoluteLayout
+            android:id="@+id/AbsoluteLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="1dp"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp" >
+
+            <TextView
+                android:id="@+id/gruppe_anzeigen_mitglieder_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="@string/neue_gruppe_erstellen_mitglieder"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="15sp"
+                android:width="100dp" />
+
+            <Button
+                android:id="@+id/button2"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="80dp"
+                android:layout_height="32dp"
+                android:layout_x="171dp"
+                android:layout_y="12dp"
+                android:background="@drawable/green_selector"
+                android:onClick="kontakteAuswaehlen"
+                android:text="hinzufügen"
+                android:textSize="14sp" />
+
+        </AbsoluteLayout>
+
+        <ListView
+            android:id="@+id/lv_kontakte"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.30"
+            android:drawSelectorOnTop="false" >
+
+        </ListView>
+
+        <Button
+            android:id="@+id/buttonGruppeSpeichernFahrtStarten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/green_selector"
+            android:onClick="fahrtStarten"
+            android:text="Gruppe speichern und Fahrt starten"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/buttonGruppeSpeichernStartbildschirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_selector"
+            android:onClick="gruppeSpeichern"
+            android:text="Gruppe speichern und zum Startbildschirm zurückkehren"
+            android:textSize="16sp" />
+
+    </TableLayout>
+
+</RelativeLayout>
